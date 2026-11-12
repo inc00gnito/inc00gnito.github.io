@@ -25,7 +25,7 @@ employers:
           - id: github-governance
             title: GitHub governance
             text: >-
-              I design how client organizations run on GitHub Enterprise: who
+              Designing how client organizations run on GitHub Enterprise: who
               can access what, how branches are protected, and which security
               policies apply. The goal is a setup that keeps teams productive
               and code safe.
@@ -33,39 +33,55 @@ employers:
           - id: github-copilot
             title: GitHub Copilot
             text: >-
-              I help teams roll out Copilot and make it part of how they work,
+              Helping teams roll out Copilot and make it part of how they work,
               so developers get the benefit with the right guardrails in place.
             tags: [github, copilot, ai]
           - id: migrations
             title: Migrations
             text: >-
-              I moved more than 1,000 repositories to GitHub for multiple
+              Moved more than 1,000 repositories to GitHub for multiple
               clients from sources such as Azure DevOps, GitLab and SVN, with
               no data lost along the way. Where off-the-shelf tools fell short,
-              I built the migration and sync tooling myself.
+              custom migration and sync tooling filled the gap.
             tags: [github, migrations, tooling]
             metrics: ["1,000+ repositories migrated", zero data lost]
             tech: [Azure DevOps, GitLab, SVN]
           - id: cicd
             title: CI/CD
             text: >-
-              I replace aging build and release pipelines with GitHub Actions
+              Replacing aging build and release pipelines with GitHub Actions
               workflows that are simpler to maintain and give clients quicker,
               more dependable releases.
             tags: [github-actions, cicd, devops]
+          - id: jenkins-jcasc-azure-migration
+            title: Jenkins migration to Azure with JCasC
+            text: >-
+              Migrated a custom on-prem Jenkins to Azure with nearly 900
+              pipelines and no downtime. The whole setup is managed as code
+              with JCasC and promoted from dev to test to prod, with backup
+              options in place on prod.
+            facts:
+              - Migrated a custom on-prem Jenkins to an Azure-hosted Jenkins.
+              - Managed the whole Jenkins configuration as code with Jenkins Configuration as Code (JCasC).
+              - Promoted changes through dev, test and prod environments from the JCasC code.
+              - Set up backup options for the prod Jenkins.
+              - Migrated close to 900 pipelines with no downtime, at SoftwareOne.
+            metrics: [nearly 900 pipelines migrated, zero downtime]
+            tags: [jenkins, jcasc, azure, cicd, devops, migrations]
+            tech: [Jenkins, JCasC, Azure]
           - id: automation
             title: Automation
             text: >-
-              I automate the repetitive work around delivery: IssueOps
+              Automating the repetitive work around delivery: IssueOps
               workflows for access requests and release coordination, and
               PowerShell automation that makes Azure deployments repeatable.
             tags: [automation, issueops, powershell, azure]
           - id: community
             title: Community
             text: >-
-              I'm an active, friendly voice in our internal engineering
+              An active, friendly voice in the internal engineering
               community: always happy to help colleagues, answer questions,
-              review code and share what I've learned.
+              review code and share what has been learned.
             tags: [community, mentoring]
 
       - title: Junior Cloud Native Developer
@@ -75,7 +91,7 @@ employers:
           - id: legal-tech-ai
             title: AI-powered legal tech
             text: >-
-              I built a C# platform on Azure AI services that reads legal
+              Built a C# platform on Azure AI services that reads legal
               documents and pulls out the data that matters, so the client's
               teams spend far less time on research. It is built with CQRS,
               MediatR and Polly and backed by Testcontainers integration tests.
@@ -84,7 +100,7 @@ employers:
           - id: apis
             title: APIs
             text: >-
-              I owned the design of ASP.NET Core APIs for client-facing
+              Owned the design of ASP.NET Core APIs for client-facing
               services, from OpenAPI documentation and performance profiling to
               clear, structured error handling.
             tags: [dotnet, api]
@@ -92,7 +108,7 @@ employers:
           - id: cloud-solutions
             title: Cloud solutions
             text: >-
-              I delivered cloud-native Azure solutions for several clients,
+              Delivered cloud-native Azure solutions for several clients,
               designed to use resources efficiently and keep running costs
               down.
             tags: [azure, cloud]
@@ -108,25 +124,25 @@ employers:
           - id: enterprise-billing
             title: Enterprise billing
             text: >-
-              I developed and maintained billing software for a major client on
+              Developed and maintained billing software for a major client on
               .NET and SQL Server, working in an Agile/Scrum team.
             tags: [dotnet, sql, agile]
           - id: sql-server
             title: SQL Server
             text: >-
-              I wrote and optimized queries and stored procedures behind
+              Wrote and optimized queries and stored procedures behind
               complex billing calculations and reporting, so the numbers stayed
               accurate and the reports stayed fast.
             tags: [sql, performance]
           - id: quality
             title: Quality
             text: >-
-              I fixed defects and shipped new features in production code,
+              Fixed defects and shipped new features in production code,
               backed by code reviews and unit tests.
             tags: [quality, testing]
           - id: collaboration
             title: Collaboration
             text: >-
-              I worked closely with analysts, testers and the client to turn
+              Worked closely with analysts, testers and the client to turn
               billing rules into reliable, well-tested software.
             tags: [collaboration]

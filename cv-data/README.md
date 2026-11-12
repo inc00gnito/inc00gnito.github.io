@@ -13,7 +13,7 @@ Everything about my career in one place. The YAML itself is not published, but t
 
 ## Generating a CV and updating the data
 
-Use the `cv-assistant` agent (`.github/agents/cv-assistant.agent.md`, available in Copilot CLI via `/agent` or `--agent cv-assistant`, and in VS Code Copilot Chat). Tell it about new work ("I just finished X, did Y, tools Z") and it updates these files. Paste a job posting and it selects from them and writes `out/cv-<role>.md` (git-ignored).
+Use the `cv-assistant` agent (`.github/agents/cv-assistant.agent.md`, available in Copilot CLI via `/agent` or `--agent cv-assistant`, and in VS Code Copilot Chat). Tell it about new work ("I just finished X, did Y, tools Z") or just mention a tool or skill, and it interviews you about real work experience before updating these files. It only edits `cv-data/` and `out/`, never `site/`, and only runs the site preview when you ask. Paste a job posting and it selects from them and writes `out/cv-<role>.md` (git-ignored).
 
 ## The website
 
