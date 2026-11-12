@@ -12,6 +12,7 @@ The CV sections are rendered from `cv-data/` by a small Python script during dep
 - `tools/build_site.py` - renders `cv-data/` into `site/index.html` during deployment
 - `.github/agents/cv-assistant.agent.md` - Copilot agent that maintains `cv-data/` and builds tailored CVs
 - `.github/workflows/pages.yml` - deploys `site/` to GitHub Pages
+- `.github/workflows/release.yml` - auto-tags and creates GitHub Releases (logic lives in `.github/scripts/`, one script per step)
 
 ## Updating the CV
 
@@ -34,3 +35,7 @@ Other flags: `--dry-run` prints the diff, `--check` exits 1 if `site/index.html`
 ## Deployment
 
 Every push to `main` runs `tools/build_site.py` and then publishes the `site/` folder via GitHub Actions. This requires Settings > Pages > Source to be set to "GitHub Actions". The workflow can also be started manually from the Actions tab.
+
+## Releases
+
+Every push to `main` also runs `.github/workflows/release.yml`, which creates the next `vMAJOR.MINOR.PATCH` tag and a GitHub Release with auto-generated notes. The default is a patch bump, detected from [Conventional Commits](https://www.conventionalcommits.org/) messages since the last tag: `feat:` bumps minor, `fix:` (or anything else) bumps patch, and `type!:` or a `BREAKING CHANGE:` footer bumps major. The highest level wins. You can also run the workflow manually and pick the bump. The first release is `v0.0.1`.
