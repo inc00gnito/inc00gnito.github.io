@@ -1,0 +1,23 @@
+# Optional per cert: name, issued (YYYY-MM), expires (YYYY-MM), credential_id, url.
+# Optional per issuer: site_label (heading on the website, defaults to name).
+# Set `site: false` on an issuer or cert to keep it off the website.
+issuers:
+  - name: Microsoft
+    certifications:
+      - code: AZ-204
+      - code: AZ-104
+      - code: AZ-900
+      - code: AI-102
+      - code: AI-900
+      - code: DP-900
+  - name: GitHub
+    certifications:
+      - code: Foundations
+      - code: Actions
+      - code: Administration
+      - code: Advanced Security
+      - code: Migrations
+  - name: Scrum.org
+    site_label: Scrum
+    certifications:
+      - code: PSM-I

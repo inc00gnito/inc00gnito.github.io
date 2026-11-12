@@ -1,18 +1,36 @@
 # inc00gnito.github.io
 
-Personal CV website of Patrycja Kozak, live at https://inc00gnito.github.io/.
+**🌐 Live site:** [**inc00gnito.github.io**](https://inc00gnito.github.io/)
 
-A static site built with plain HTML, CSS and JavaScript. No build step or dependencies.
+A static site built with plain HTML, CSS and JavaScript. 
+The CV sections are rendered from `cv-data/` by a small Python script during deployment.
 
 ## Structure
 
 - `site/` - the website (`index.html`, `style.css`, `script.js`)
+- `cv-data/` - CV knowledge base in YAML; the site's CV sections are generated from it (see its README)
+- `tools/build_site.py` - renders `cv-data/` into `site/index.html` during deployment
+- `.github/agents/cv-assistant.agent.md` - Copilot agent that maintains `cv-data/` and builds tailored CVs
 - `.github/workflows/pages.yml` - deploys `site/` to GitHub Pages
+
+## Updating the CV
+
+1. Run the `cv-assistant` agent in **interactive** mode (`copilot --agent cv-assistant`, or `/agent` in a session). It interviews you about new work, tools and skills, then updates only `cv-data/`. Autopilot won't work because it needs your answers.
+2. Optional: ask it for a tailored CV from a job posting; the result is written to `out/` (git-ignored).
+3. Commit and push. GitHub Actions regenerates the site sections from `cv-data/` on deploy.
+
+The agent never edits `site/` and only runs the preview when asked.
 
 ## Local preview
 
-Open `site/index.html` in a browser.
+Preview the generated site without touching `site/` (needs `pip install pyyaml`):
+
+```
+python tools/build_site.py --preview
+```
+
+Other flags: `--dry-run` prints the diff, `--check` exits 1 if `site/index.html` is out of date, `--no-open` skips opening the browser. Plain `python tools/build_site.py` writes the result into `site/index.html`. Opening `site/index.html` directly shows the last generated version.
 
 ## Deployment
 
-Every push to `main` publishes the `site/` folder via GitHub Actions. This requires Settings > Pages > Source to be set to "GitHub Actions". The workflow can also be started manually from the Actions tab.
+Every push to `main` runs `tools/build_site.py` and then publishes the `site/` folder via GitHub Actions. This requires Settings > Pages > Source to be set to "GitHub Actions". The workflow can also be started manually from the Actions tab.
