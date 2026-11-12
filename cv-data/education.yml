@@ -1,0 +1,11 @@
+education:
+  - institution: Warsaw University of Life Sciences
+    degrees:
+      - level: Master of Science
+        field: Computer Science
+        start:
+        end:
+      - level: Bachelor of Science
+        field: Computer Science
+        start:
+        end:

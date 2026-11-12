@@ -1,0 +1,12 @@
+# Skills by group. Optional per skill: level (1-5), years, tags.
+# Use the long form `- name: X` when you want to add details.
+# Set `site: false` on a group or skill (long form) to keep it off the website.
+groups:
+  - name: Languages
+    skills: [C#, Python, TypeScript, PowerShell, SQL (T-SQL)]
+  - name: Frameworks & Data
+    skills: [.NET, EF Core, SQL Server, Azure Cosmos DB, Angular, Vue]
+  - name: Cloud & DevOps
+    skills: [Azure, Azure AI Services, GitHub Actions, CI/CD, Docker, IssueOps, Git]
+  - name: Practices
+    skills: [CQRS, Microservices, Event-Driven Architecture, Domain-Driven Design, Agile/Scrum]

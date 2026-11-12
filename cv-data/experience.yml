@@ -1,0 +1,132 @@
+# Employers -> roles -> achievements.
+# Add new achievements freely; tags let you filter them for a specific CV.
+# Optional per achievement: metrics (numbers/results), tech (tools used), notes (private).
+#
+# You do NOT need to write polished text. A minimal new entry is just rough facts:
+#   - id: my-new-thing
+#     title: Short label
+#     facts:                       # messy notes are fine: what, why, result, tools
+#       - moved 40 repos from GitLab, kept history
+#       - saved the team ~2h/week
+#     tags: [github, migrations]
+# `text` is the ready-to-use wording. When it is empty, Copilot (or the future
+# render script) writes it from `facts` when you build a CV.
+# The website shows every achievement that has `text`. Set `site: false` on an
+# achievement to keep it in this knowledge base only.
+employers:
+  - id: softwareone
+    company: SoftwareOne
+    location:
+    roles:
+      - title: Cloud Native Developer
+        start: 2022-07   # promoted from Junior; set exact date if wanted
+        end: present
+        achievements:
+          - id: github-governance
+            title: GitHub governance
+            text: >-
+              I design how client organizations run on GitHub Enterprise: who
+              can access what, how branches are protected, and which security
+              policies apply. The goal is a setup that keeps teams productive
+              and code safe.
+            tags: [github, governance, security]
+          - id: github-copilot
+            title: GitHub Copilot
+            text: >-
+              I help teams roll out Copilot and make it part of how they work,
+              so developers get the benefit with the right guardrails in place.
+            tags: [github, copilot, ai]
+          - id: migrations
+            title: Migrations
+            text: >-
+              I moved more than 1,000 repositories to GitHub for multiple
+              clients from sources such as Azure DevOps, GitLab and SVN, with
+              no data lost along the way. Where off-the-shelf tools fell short,
+              I built the migration and sync tooling myself.
+            tags: [github, migrations, tooling]
+            metrics: ["1,000+ repositories migrated", zero data lost]
+            tech: [Azure DevOps, GitLab, SVN]
+          - id: cicd
+            title: CI/CD
+            text: >-
+              I replace aging build and release pipelines with GitHub Actions
+              workflows that are simpler to maintain and give clients quicker,
+              more dependable releases.
+            tags: [github-actions, cicd, devops]
+          - id: automation
+            title: Automation
+            text: >-
+              I automate the repetitive work around delivery: IssueOps
+              workflows for access requests and release coordination, and
+              PowerShell automation that makes Azure deployments repeatable.
+            tags: [automation, issueops, powershell, azure]
+          - id: community
+            title: Community
+            text: >-
+              I'm an active, friendly voice in our internal engineering
+              community: always happy to help colleagues, answer questions,
+              review code and share what I've learned.
+            tags: [community, mentoring]
+
+      - title: Junior Cloud Native Developer
+        start: 2022-07
+        end:           # fill in the exact promotion date
+        achievements:
+          - id: legal-tech-ai
+            title: AI-powered legal tech
+            text: >-
+              I built a C# platform on Azure AI services that reads legal
+              documents and pulls out the data that matters, so the client's
+              teams spend far less time on research. It is built with CQRS,
+              MediatR and Polly and backed by Testcontainers integration tests.
+            tags: [dotnet, azure, ai, cqrs]
+            tech: [C#, Azure AI Services, CQRS, MediatR, Polly, Testcontainers]
+          - id: apis
+            title: APIs
+            text: >-
+              I owned the design of ASP.NET Core APIs for client-facing
+              services, from OpenAPI documentation and performance profiling to
+              clear, structured error handling.
+            tags: [dotnet, api]
+            tech: [ASP.NET Core, OpenAPI]
+          - id: cloud-solutions
+            title: Cloud solutions
+            text: >-
+              I delivered cloud-native Azure solutions for several clients,
+              designed to use resources efficiently and keep running costs
+              down.
+            tags: [azure, cloud]
+
+  - id: sygnity
+    company: Sygnity S.A.
+    location:
+    roles:
+      - title: Junior .NET Developer
+        start: 2021-11
+        end: 2022-05
+        achievements:
+          - id: enterprise-billing
+            title: Enterprise billing
+            text: >-
+              I developed and maintained billing software for a major client on
+              .NET and SQL Server, working in an Agile/Scrum team.
+            tags: [dotnet, sql, agile]
+          - id: sql-server
+            title: SQL Server
+            text: >-
+              I wrote and optimized queries and stored procedures behind
+              complex billing calculations and reporting, so the numbers stayed
+              accurate and the reports stayed fast.
+            tags: [sql, performance]
+          - id: quality
+            title: Quality
+            text: >-
+              I fixed defects and shipped new features in production code,
+              backed by code reviews and unit tests.
+            tags: [quality, testing]
+          - id: collaboration
+            title: Collaboration
+            text: >-
+              I worked closely with analysts, testers and the client to turn
+              billing rules into reliable, well-tested software.
+            tags: [collaboration]

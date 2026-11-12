@@ -1,0 +1,48 @@
+# Who I am. Pick the summary variant that fits the CV you are building.
+name: Patrycja Kozak
+headline: Cloud Native Developer
+focus: [GitHub, Azure, DevOps, .NET]
+tagline: Hands-on, proactive and mildly sarcastic.
+
+summary:
+  short: >-
+    Cloud native developer helping organizations get value from GitHub:
+    governance, Copilot adoption, migrations and CI/CD, backed by Azure and
+    .NET experience.
+  long: >-
+    I'm a cloud native developer who helps organizations get real value from
+    GitHub. Day to day that means GitHub governance, Copilot adoption,
+    migrations and CI/CD, backed by Azure and .NET experience and a Master's in
+    Computer Science.
+  working_style: >-
+    I'm a client-oriented, hands-on engineer who likes solving real problems. I
+    start with what the client is trying to achieve, then take the initiative
+    to get there, whether that's a quick fix or a bigger change.
+  personality: >-
+    I'm proactive, practical and always up for helping a colleague get unstuck.
+
+currently:
+  - text: The GitHub platform, all of it
+    items: [Copilot adoption, Migrations to GitHub, CI/CD & automation]
+  - text: Still hands-on with code
+    items:
+      - .NET & C#, the first love (but far from the only one)
+      - Azure & cloud-native services
+      - Reviewing PRs (kindly, mostly)
+status: caffeinated, but helpful
+
+contact:
+  linkedin: https://www.linkedin.com/in/patrycja-kozak14
+  github: https://github.com/inc00gnito
+  website: https://inc00gnito.github.io/
+  email:        # add if wanted
+  phone:        # add if wanted
+  location:     # add if wanted
+
+open_to: Backend, cloud and DevOps roles.
+
+spoken_languages:
+  - language: Polish
+    level: native
+  - language: English
+    level: C1
