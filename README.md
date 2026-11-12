@@ -11,11 +11,7 @@ A static site built with plain HTML, CSS and JavaScript. No build step or depend
 
 ## Local preview
 
-Open `site/index.html` in a browser, or serve the folder:
-
-```
-npx serve site
-```
+Open `site/index.html` in a browser.
 
 ## Deployment
 
