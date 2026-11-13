@@ -36,6 +36,20 @@ employers:
               Helping teams roll out Copilot and make it part of how they work,
               so developers get the benefit with the right guardrails in place.
             tags: [github, copilot, ai]
+          - id: agentic-engineering
+            title: Agentic engineering and custom agents
+            text: >-
+              Building custom Copilot agents, instructions, skills, MCP
+              integrations and agentic workflows that speed up everyday work
+              and keep the team consistent: documentation, issue triage and an
+              internal agent plugin that supports offerings and sales needs
+              for clients.
+            facts:
+              - Built custom agents and agentic workflows to speed up team processes and keep results consistent across the team.
+              - Use cases include documentation, issue triage and an internal agent plugin for offerings and sales work for client needs.
+              - Used custom agents, instruction and skill files, MCP servers and GitHub Actions with Copilot / agentic workflows.
+            tags: [copilot, ai, agentic, automation, github, mcp]
+            tech: [GitHub Copilot, custom agents, MCP, GitHub Actions]
           - id: migrations
             title: Migrations
             text: >-
@@ -53,6 +67,20 @@ employers:
               workflows that are simpler to maintain and give clients quicker,
               more dependable releases.
             tags: [github-actions, cicd, devops]
+          - id: reusable-actions-runners
+            title: Reusable workflows, actions and runners
+            text: >-
+              Building reusable workflows and actions that cover build, test
+              and deploy for clients moving to GitHub, tuning existing
+              workflows along the way, and setting up GitHub-hosted and
+              self-hosted runners to run them.
+            facts:
+              - Built reusable workflows and actions (several kinds, including reusable workflows and composite actions) for various clients while migrating them to GitHub.
+              - Covered the full build, test and deploy lifecycle.
+              - Optimized existing workflows as part of client migrations to GitHub.
+              - Set up GitHub-hosted and self-hosted GitHub Actions runners for clients.
+            tags: [github-actions, cicd, devops, runners, migrations]
+            tech: [GitHub Actions, self-hosted runners]
           - id: jenkins-jcasc-azure-migration
             title: Jenkins migration to Azure with JCasC
             text: >-
